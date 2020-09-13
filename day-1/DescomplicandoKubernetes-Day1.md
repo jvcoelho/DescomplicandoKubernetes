@@ -697,8 +697,8 @@ kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
   - role: control-plane
-  - role: worker1
-  - role: worker2
+  - role: worker
+  - role: worker
 EOF
 ```
 
@@ -730,8 +730,8 @@ kubectl get nodes
 
 NAME                            STATUS   ROLES    AGE     VERSION
 kind-multinodes-control-plane   Ready    master   3m3s    v1.18.2
-kind-multinodes-worker1          Ready    <none>   2m30s   v1.18.2
-kind-multinodes-worker2         Ready    <none>   2m30s   v1.18.2
+kind-multinodes-worker          Ready    <none>   2m30s   v1.18.2
+kind-multinodes-worker          Ready    <none>   2m30s   v1.18.2
 ```
 
 Mais informações sobre o Kind estão disponíveis em: https://kind.sigs.k8s.io
